@@ -3,7 +3,7 @@ package sasahara.kadai;
 class Circle{
 	private double radius;
 
-	Circle(double radius){
+	public Circle(double radius){
 		this.radius = radius;
 	}
 
@@ -24,7 +24,7 @@ class Circle{
 class Square{
 	private double sides;
 
-	Square(double sides){
+	public Square(double sides){
 		this.sides = sides;
 	}
 
