@@ -25,8 +25,8 @@ class Circle {
 
 	}
 
-	public void setRadius() {
-
+	public void setRadius(double radius) {
+		this.radius = radius;
 	}
 
 	public double getArea() {
@@ -47,8 +47,8 @@ class Square{
 		return side;
 	}
 	
-	public void setSide() {
-		
+	public void setSide(double side) {
+		this.side = side;
 	}
 	
 	public double getArea() {
