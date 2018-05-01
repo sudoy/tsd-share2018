@@ -6,6 +6,7 @@ public class F_Test1 {
 		System.out.println("Yes!!");
 
 		System.out.println("tsuchitoi");
+		System.out.println("written by sakamoto");
 
 		System.out.println("Fuka");
 
