@@ -26,7 +26,7 @@ class Circle{
 		return radius;
 	}
 	public double getArea() {
-		return radius*radius;
+		return radius*radius*3.14;
 	}
 }
 class Square{
