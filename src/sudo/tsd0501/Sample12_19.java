@@ -39,7 +39,9 @@ public class Sample12_19 {
 		for (int num : array) {
 			if (num % 2 == 1) {
 				if (num <= 1000) {
-					intArray1.add(num);
+					if(num % 3 == 0) {
+						intArray1.add(num);
+					}
 				}
 			}
 		}
@@ -51,6 +53,7 @@ public class Sample12_19 {
 		ArrayList<Integer> intArray2 = (ArrayList<Integer>) (array.stream()
 				.filter(num -> num % 2 == 1)
 				.filter(num -> num <= 1000)
+				.filter(num -> num % 3 == 0)
 				.collect(Collectors.toList()));
 		System.out.println("intArray2 : " + intArray2);
 	}
