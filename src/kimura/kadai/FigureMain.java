@@ -15,7 +15,6 @@ public class FigureMain {
 
 class Circle{
 	private double radius;
-	private double π = 3.14;
 
 	public double getRadius(){
 		return radius;
@@ -25,12 +24,12 @@ class Circle{
 		this.radius = radius;
 	}
 
-	Circle(double radius){
+	public  Circle(double radius){
 		this.radius = radius;
 	}
 
 	public double getArea() {
-		return radius * radius * π;
+		return radius * radius * 3.14;
 	}
 }
 
@@ -45,7 +44,7 @@ class Square{
 		this.side = side;
 	}
 
-	Square(int side){
+	public Square(int side){
 		this.side = side;
 	}
 
