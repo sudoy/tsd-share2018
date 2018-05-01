@@ -15,6 +15,7 @@ public class FigureMain {
 
 class Circle{
 	private double radius;
+	private double π = 3.14;
 
 	public double getRadius(){
 		return radius;
@@ -29,7 +30,7 @@ class Circle{
 	}
 
 	public double getArea() {
-		return radius * radius * 3.14;
+		return radius * radius * π;
 	}
 }
 
