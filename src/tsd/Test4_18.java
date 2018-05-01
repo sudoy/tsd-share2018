@@ -12,5 +12,3 @@ public class Test4_18 {
 	}
 
 }
-
-}

@@ -15,30 +15,30 @@ class Animal {
 	}
 }
 
-class Dog extends Animal{
-	public Dog(int a) {
-		super(a);
-	}
-	public void showBite() {
-		System.out.println("噛みつく");
-	}
-}
-class Cat extends Animal{
-	public void showScrabble() {
-		System.out.println("ひっかく");
-	}
-}
+//class Dog extends Animal{
+//	public Dog(int a) {
+//		super(a);
+//	}
+//	public void showBite() {
+//		System.out.println("噛みつく");
+//	}
+//}
+//class Cat extends Animal{
+//	public void showScrabble() {
+//		System.out.println("ひっかく");
+//	}
+//}
 
 public class DogCatMain {
 
 	public static void main(String[] args) {
-		Dog d1 = new Dog(10);
-		Cat c1 = new Cat();
-
-		d1.showWalk();
-		d1.showBite();
-
-		c1.showWalk();
-		c1.showScrabble();
+//		Dog d1 = new Dog(10);
+//		Cat c1 = new Cat();
+//
+//		d1.showWalk();
+//		d1.showBite();
+//
+//		c1.showWalk();
+//		c1.showScrabble();
 	}
 }

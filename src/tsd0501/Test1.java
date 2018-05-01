@@ -16,7 +16,7 @@ public class Test1 {
 
 		short s = 5;
 		int i = s; // 暗黙的型変換
-		Integer wi = s;
+//		Integer wi = s;
 
 		// 1)
 		Integer wi1 = new Integer(s);
