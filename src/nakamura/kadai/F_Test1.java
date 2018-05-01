@@ -1,4 +1,4 @@
-package f.nakamura;
+package nakamura.kadai;
 
 public class F_Test1 {
 
