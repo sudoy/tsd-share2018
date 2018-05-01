@@ -1,7 +1,7 @@
 package sasahara.kadai;
 
 class Circle{
-	double radius;
+	private double radius;
 
 	Circle(double radius){
 		this.radius = radius;
@@ -22,7 +22,7 @@ class Circle{
 }
 
 class Square{
-	double sides;
+	private double sides;
 
 	Square(double sides){
 		this.sides = sides;
