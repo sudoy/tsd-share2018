@@ -41,6 +41,8 @@ public class Kadai27 {
 //		}
 //		System.out.print(x + " = " + (sum + x));
 
+		
+		
 	}
 
 }
