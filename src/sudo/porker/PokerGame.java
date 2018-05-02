@@ -43,14 +43,13 @@ public class PokerGame {
 			System.out.println("{" + c.getMark() + ", " + c.getNumber() +"}");
 		}
 
-		Poker poker = new Poker();
+		PokerGame poker = new PokerGame();
 		System.out.println(poker.judge(pickup));
 	}
-}
 
-class Poker{
 	private Hand handChain = null;
-	public Poker() {
+
+	public PokerGame() {
 		handChain = new StraightFlush();
 		handChain
 			.setNext(new FourOfAKind())
@@ -62,56 +61,8 @@ class Poker{
 			.setNext(new OnePair())
 			.setNext(new NoPair());
 	}
+
 	public String judge(List<Card> cards) {
 		return handChain.judge(cards);
-	}
-
-}
-
-abstract class Hand{
-	private Hand next = null;
-	public Hand setNext(Hand next) {
-		this.next = next;
-		return next;
-	}
-	public String judge(List<Card> cards) {
-		if(hasRole(cards)) {
-			return getRoleName();
-		}else {
-			if(next != null) {
-				return next.judge(cards);
-			}else {
-				throw new RuntimeException("役が設定されていません。");
-			}
-		}
-	}
-
-	public abstract boolean hasRole(List<Card> cards);
-	public abstract String getRoleName();
-}
-
-enum Mark{SPADE, DIAMOND, HEART, CLUB};
-
-class Card{
-	private Mark mark;
-	private int number;
-
-	public Card(Mark mark, int number) {
-		super();
-		this.mark = mark;
-		this.number = number;
-	}
-
-	public Mark getMark() {
-		return mark;
-	}
-	public void setMark(Mark mark) {
-		this.mark = mark;
-	}
-	public int getNumber() {
-		return number;
-	}
-	public void setNumber(int number) {
-		this.number = number;
 	}
 }
