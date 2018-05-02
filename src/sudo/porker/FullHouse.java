@@ -6,7 +6,7 @@ public class FullHouse extends Hand {
 
 	@Override
 	public boolean hasRole(List<Card> cards) {
-		int pairCount = 0;
+		int pair = 0;
 
 		for(Card c1 : cards) {
 			for(Card c2 : cards) {
@@ -31,11 +31,11 @@ public class FullHouse extends Hand {
 
 				//ペアが8枚あればフルハウス ワンペア＝2 スリーカード=6
 				if(c1.getNumber() == c2.getNumber()) {
-					pairCount++;
+					pair++;
 				}
 			}
 		}
-		return pairCount == 8;
+		return pair == 8;
 
 	}
 
