@@ -17,7 +17,7 @@ public class Flush extends Hand {
 
 	@Override
 	public String getRoleName() {
-		return "FLUSH";
+		return "フラッシュ";
 	}
 
 }
