@@ -6,14 +6,29 @@ public class ThreeOfAKind extends Hand {
 
 	@Override
 	public boolean hasRole(List<Card> cards) {
-		// TODO 自動生成されたメソッド・スタブ
+		int count = 0;
+
+		for(int i = 1; i < 14; i++) {
+			count = 0;
+			for(Card c : cards) {
+				if(c.getNumber() == i) {
+					count++;
+				}
+			}
+			if(count == 3) {
+				return count == 3;
+			}
+		}
 		return false;
+
+
+
+
 	}
 
 	@Override
 	public String getRoleName() {
-		// TODO 自動生成されたメソッド・スタブ
-		return null;
+		return "スリーカード";
 	}
 
 }
