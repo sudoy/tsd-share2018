@@ -5,7 +5,7 @@ import java.util.List;
 // ワンペア
 public class OnePair extends Hand{
 
-	protected int getPairCount(List<Card> cards) {
+	public boolean hasRole(List<Card> cards) {
 		int pairCount = 0;
 		for(Card c1 : cards) {
 			for(Card c2 : cards) {
@@ -20,11 +20,7 @@ public class OnePair extends Hand{
 				}
 			}
 		}
-		return pairCount / 2;
-	}
-
-	public boolean hasRole(List<Card> cards) {
-		return getPairCount(cards) == 1;
+		return pairCount == 2;
 	}
 
 	@Override
