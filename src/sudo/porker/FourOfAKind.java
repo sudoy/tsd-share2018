@@ -20,7 +20,6 @@ public class FourOfAKind extends Hand {
 			}
 
 		}
-		System.out.println(count);
 		return false;
 
 
