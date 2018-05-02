@@ -3,7 +3,6 @@ package sudo.porker;
 import java.util.ArrayList;
 import java.util.List;
 
-//ストレート
 public class Straight extends Hand {
 
 	@Override
@@ -37,4 +36,3 @@ public class Straight extends Hand {
 
 
 }
-
