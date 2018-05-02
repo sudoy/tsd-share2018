@@ -4,10 +4,12 @@ import java.util.List;
 
 public abstract class Hand {
 	private Hand next = null;
+
 	public Hand setNext(Hand next) {
 		this.next = next;
 		return next;
 	}
+
 	public String judge(List<Card> cards) {
 		if(hasRole(cards)) {
 			return getRoleName();
