@@ -6,14 +6,30 @@ public class FourOfAKind extends Hand {
 
 	@Override
 	public boolean hasRole(List<Card> cards) {
-		// TODO 自動生成されたメソッド・スタブ
+
+		int count = 0;
+		for(int i = 1; i < 14; i++) {
+			count = 0;
+			for(Card c : cards ) {
+				if( c.getNumber() == i ) {
+					count++;
+				}
+			}
+			if(count == 4) {
+				return count == 4;
+			}
+
+		}
+		System.out.println(count);
 		return false;
+
+
 	}
 
 	@Override
 	public String getRoleName() {
-		// TODO 自動生成されたメソッド・スタブ
-		return null;
+
+		return "フォーカード";
 	}
 
 }
