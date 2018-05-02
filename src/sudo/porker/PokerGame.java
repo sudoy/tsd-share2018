@@ -32,12 +32,12 @@ public class PokerGame {
 //		pickup.add(new Card("クラブ", 2));
 
 //		ストレート
-//		pickup = new ArrayList<>();
-//		pickup.add(new Card(Mark.DIAMOND, 5));
-//		pickup.add(new Card(Mark.HEART, 6));
-//		pickup.add(new Card(Mark.CLUB, 4));
-//		pickup.add(new Card(Mark.HEART, 3));
-//		pickup.add(new Card(Mark.CLUB, 2));
+		pickup = new ArrayList<>();
+		pickup.add(new Card(Mark.DIAMOND, 5));
+		pickup.add(new Card(Mark.HEART, 5));
+		pickup.add(new Card(Mark.CLUB, 9));
+		pickup.add(new Card(Mark.SPADE, 2));
+		pickup.add(new Card(Mark.HEART, 2));
 
 		for(Card c : pickup) {
 			System.out.println("{" + c.getMark() + ", " + c.getNumber() +"}");
