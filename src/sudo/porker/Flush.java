@@ -6,14 +6,18 @@ public class Flush extends Hand {
 
 	@Override
 	public boolean hasRole(List<Card> cards) {
-		// TODO 自動生成されたメソッド・スタブ
+		if(cards.get(0).getMark().equals(cards.get(1).getMark())
+				&& cards.get(0).getMark().equals(cards.get(2).getMark())
+				&& cards.get(0).getMark().equals(cards.get(3).getMark())
+				&& cards.get(0).getMark().equals(cards.get(4).getMark())) {
+			return true;
+		}
 		return false;
 	}
 
 	@Override
 	public String getRoleName() {
-		// TODO 自動生成されたメソッド・スタブ
-		return null;
+		return "フラッシュ";
 	}
 
 }

@@ -6,14 +6,22 @@ public class StraightFlush extends Hand {
 
 	@Override
 	public boolean hasRole(List<Card> cards) {
-		// TODO 自動生成されたメソッド・スタブ
+
+		Flush flu = new Flush();
+		boolean flu1 = flu.hasRole(cards);
+
+		Straight stra = new Straight();
+		boolean stra1 = stra.hasRole(cards);
+
+		if( flu1 == true && stra1 == true) {
+			return true;
+		}
 		return false;
 	}
 
 	@Override
 	public String getRoleName() {
-		// TODO 自動生成されたメソッド・スタブ
-		return null;
+		return "ストレートフラッシュ";
 	}
 
 }
