@@ -20,9 +20,9 @@ public class CryptDecode {
 		System.out.print("データ名：");
 
 		File inputFile = new File("c:\\output", file);
-		
+
 		FileInputStream fis = null;
-		
+
 		try {
 			fis = new FileInputStream(inputFile);
 
@@ -36,7 +36,7 @@ public class CryptDecode {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}finally {
+		} finally {
 			try {
 				fis.close();
 			} catch (IOException e) {
