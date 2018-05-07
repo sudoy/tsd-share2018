@@ -32,6 +32,7 @@ public class CryptDecode {
 			while((c = in.read()) != -1) {
 				System.out.println((char)(c - 1));
 			}
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
