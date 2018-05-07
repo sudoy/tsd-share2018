@@ -22,7 +22,6 @@ public class CryptEncode {
 		try {
 			out = new FileOutputStream(output);
 
-
 			System.out.print("データ：");
 			String str = scn.nextLine();
 

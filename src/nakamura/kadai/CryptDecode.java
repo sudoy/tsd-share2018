@@ -21,7 +21,6 @@ public class CryptDecode {
 		try {
 			in = new FileInputStream(input);
 
-
 			System.out.print("データ：");
 			int c;
 			while((c = in.read()) != -1) {
